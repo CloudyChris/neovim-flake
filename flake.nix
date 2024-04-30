@@ -261,19 +261,19 @@
 
               nix.enable = overrideable true;
               markdown.enable = overrideable true;
-              html.enable = overrideable isMaximal;
-              clang.enable = overrideable isMaximal;
-              sql.enable = overrideable isMaximal;
+              html.enable = overrideable true;
+              clang.enable = overrideable true;
+              sql.enable = overrideable true;
               rust = {
                 enable = overrideable isMaximal;
                 crates.enable = overrideable true;
               };
-              ts.enable = overrideable isMaximal;
+              ts.enable = overrideable true;
               go.enable = overrideable isMaximal;
               zig.enable = overrideable isMaximal;
-              python.enable = overrideable isMaximal;
+              python.enable = overrideable true;
               plantuml.enable = overrideable isMaximal;
-              bash.enable = overrideable isMaximal;
+              bash.enable = overrideable true;
 
               # See tidal config
               tidal.enable = overrideable false;
