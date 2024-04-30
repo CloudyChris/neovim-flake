@@ -46,6 +46,7 @@ in
           "molokai"
           "nightfly"
           "nord"
+	  "onenord"
           "oceanicnext"
           "onelight"
           "palenight"

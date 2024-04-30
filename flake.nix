@@ -136,10 +136,6 @@
     plugin-nvim-ts-autotag.url = "github:windwp/nvim-ts-autotag";
     plugin-nvim-ts-autotag.flake = false;
 
-    # ChatGPT.nvim
-    plugin-chatgpt-nvim.url = "github:jackMort/ChatGPT.nvim";
-    plugin-chatgpt-nvim.flake = false;
-
     # Commenting
     plugin-kommentary.url = "github:b3nj5m1n/kommentary";
     plugin-kommentary.flake = false;
