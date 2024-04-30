@@ -54,8 +54,8 @@
     plugin-null-ls.url = "github:jose-elias-alvarez/null-ls.nvim";
     plugin-null-ls.flake = false;
 
-    plugin-sqls-nvim.url = "github:nanotee/sqls.nvim";
-    plugin-sqls-nvim.flake = false;
+    plugin-sqlls-nvim.url = "github:joe-re/sql-language-server";
+    plugin-sqlls-nvim.flake = false;
 
     plugin-rust-tools.url = "github:simrat39/rust-tools.nvim";
     plugin-rust-tools.flake = false;
