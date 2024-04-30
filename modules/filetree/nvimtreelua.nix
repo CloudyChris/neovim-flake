@@ -134,10 +134,10 @@ in
     vim.startPlugins = [ "nvim-tree-lua" ];
 
     vim.nnoremap = {
-      "<C-n>" = ":NvimTreeToggle<CR>";
+      "<C-e>" = ":NvimTreeToggle<CR>";
       "<leader>tr" = ":NvimTreeRefresh<CR>";
       "<leader>tg" = ":NvimTreeFindFile<CR>";
-      "<leader>tf" = ":NvimTreeFocus<CR>";
+      "<leader>e" = ":NvimTreeFocus<CR>";
     };
 
     vim.luaConfigRC.nvimtreelua = nvim.dag.entryAnywhere /* lua */ ''
