@@ -11,7 +11,7 @@ with builtins; let
   defaultServer = "sqlls";
   servers = {
     sqlls = {
-      package = [ "sqlls" ];
+      package = [ "sqls" ];
       lspConfig = /* lua */ ''
         lspconfig.sqlls.setup {
           on_attach = function(client, bufnr)
