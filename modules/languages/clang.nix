@@ -27,7 +27,7 @@ with builtins; let
         lspconfig.ccls.setup{
           capabilities = capabilities;
           on_attach=default_on_attach;
-          cmd = {"${nvim.languages.commandOptToCmd cfg.lsp.package "clangd"}"};
+          cmd = {"${nvim.languages.commandOptToCmd cfg.lsp.package "clangd"}", "--offset-encoding=utf-16"};
         }
       '';
     };
