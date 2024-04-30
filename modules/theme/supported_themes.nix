@@ -45,6 +45,18 @@ in
       defaultStyle = "dark";
     };
 
+    onenord = {
+      setup = ''
+        -- OneNord theme
+        require('onenord').setup {
+          style = "${cfg.style}"
+        }
+        require('onenord').load()
+      '';
+      styles = [ "light" "dark"];
+      defaultStyle = "dark";
+    };
+
     tokyonight = {
       setup = ''
         -- need to set style before colorscheme to apply
