@@ -5,7 +5,6 @@
 }:
 let
   modules = [
-    ./chatgpt
     ./completion
     ./theme
     ./core
