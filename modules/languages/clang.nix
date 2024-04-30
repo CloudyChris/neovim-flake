@@ -15,7 +15,10 @@ with builtins; let
         lspconfig.ccls.setup{
           capabilities = capabilities;
           on_attach=default_on_attach;
-          cmd = {"${nvim.languages.commandOptToCmd cfg.lsp.package "ccls"}"};
+          cmd = {
+            "${nvim.languages.commandOptToCmd cfg.lsp.package "ccls"}",
+            "--offset-encoding=utf-16"
+          };
           ${optionalString (cfg.lsp.opts != null) "init_options = ${cfg.lsp.opts}"}
         }
       '';
@@ -27,7 +30,10 @@ with builtins; let
         lspconfig.ccls.setup{
           capabilities = capabilities;
           on_attach=default_on_attach;
-          cmd = {"${nvim.languages.commandOptToCmd cfg.lsp.package "clangd"}", "--offset-encoding=utf-16"};
+          cmd = {
+            "${nvim.languages.commandOptToCmd cfg.lsp.package "clangd"}",
+            "--offset-encoding=utf-16"
+          };
         }
       '';
     };
