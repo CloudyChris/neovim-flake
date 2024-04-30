@@ -8,18 +8,18 @@ with builtins; let
   cfg = config.vim.languages.sql;
   sqlfluffDefault = "sqlfluff";
 
-  defaultServer = "sqls";
+  defaultServer = "sqlls";
   servers = {
-    sqls = {
-      package = [ "sqls" ];
+    sqlls = {
+      package = [ "sqlls" ];
       lspConfig = /* lua */ ''
-        lspconfig.sqls.setup {
+        lspconfig.sqlls.setup {
           on_attach = function(client, bufnr)
             client.server_capabilities.execute_command = true
             on_attach_keymaps(client, bufnr)
-            require'sqls'.on_attach(client, bufnr)
+            require'sqlls'.on_attach(client, bufnr)
           end,
-          cmd = {"${nvim.languages.commandOptToCmd cfg.lsp.package "sqls"}", "-config", string.format("%s/config.yml", vim.fn.getcwd()) }
+          cmd = {"${nvim.languages.commandOptToCmd cfg.lsp.package "sqlls"}", "-config", string.format("%s/config.yml", vim.fn.getcwd()) }
         }
       '';
     };
@@ -131,7 +131,7 @@ in
     })
 
     (mkIf cfg.lsp.enable {
-      vim.startPlugins = [ "sqls-nvim" ];
+      vim.startPlugins = [ "sqlls-nvim" ];
 
       vim.lsp.lspconfig.enable = true;
       vim.lsp.lspconfig.sources.sql-lsp = servers.${cfg.lsp.server}.lspConfig;
