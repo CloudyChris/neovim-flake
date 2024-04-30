@@ -7,7 +7,7 @@ with lib;
 with builtins; let
   cfg = config.vim.languages.clang;
 
-  defaultServer = "ccls";
+  defaultServer = "clangd";
   servers = {
     ccls = {
       package = [ "ccls" ];
@@ -16,8 +16,7 @@ with builtins; let
           capabilities = capabilities;
           on_attach=default_on_attach;
           cmd = {
-            "${nvim.languages.commandOptToCmd cfg.lsp.package "ccls"}",
-            "--offset-encoding=utf-16"
+            "${nvim.languages.commandOptToCmd cfg.lsp.package "ccls"}"
           };
           ${optionalString (cfg.lsp.opts != null) "init_options = ${cfg.lsp.opts}"}
         }
