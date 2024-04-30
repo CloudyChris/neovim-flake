@@ -18,6 +18,7 @@ with builtins; let
           cmd = {
             "${nvim.languages.commandOptToCmd cfg.lsp.package "ccls"}"
           };
+          filetypes = {"c", "h", "cpp", "hpp", "objc", "objcpp"}
           ${optionalString (cfg.lsp.opts != null) "init_options = ${cfg.lsp.opts}"}
         }
       '';
