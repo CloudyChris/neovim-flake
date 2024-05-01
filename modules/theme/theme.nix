@@ -15,7 +15,7 @@ in
     name = mkOption {
       description = "Supported themes can be found in `supportedThemes.nix`";
       type = types.enum (attrNames cfg.supportedThemes);
-      default = "onedark";
+      default = "onenord";
     };
 
     style = mkOption {
