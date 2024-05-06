@@ -18,11 +18,11 @@ in {
       default = "nord";
     };
 
-    style = mkOption {
-      description = "Specific style for theme if it supports it";
-      type = types.enum cfg.supportedThemes.${cfg.name}.styles;
-      default = cfg.supportedThemes.${cfg.name}.defaultStyle;
-    };
+    #style = mkOption {
+    #  description = "Specific style for theme if it supports it";
+    #  type = types.enum cfg.supportedThemes.${cfg.name}.styles;
+    #  default = cfg.supportedThemes.${cfg.name}.defaultStyle;
+    #};
 
     extraConfig = mkOption {
       description = "Additional lua configuration to add before setup";
