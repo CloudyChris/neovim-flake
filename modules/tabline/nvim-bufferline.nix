@@ -68,7 +68,7 @@ in {
                 close_icon = '',
                 left_trunc_marker = '',
                 right_trunc_marker = '',
-                separator_style = "thin",
+                separator_style = "slant",
                 max_name_length = 18,
                 max_prefix_length = 15,
                 tab_size = 18,

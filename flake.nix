@@ -154,8 +154,8 @@
     plugin-onedark.url = "github:navarasu/onedark.nvim";
     plugin-onedark.flake = false;
 
-    plugin-onenord.url = "github:rmehri01/onenord.nvim";
-    plugin-onenord.flake = false;
+    plugin-nord.url = "github:shaunsingh/nord.nvim";
+    plugin-nord.flake = false;
 
     plugin-catppuccin.url = "github:catppuccin/nvim";
     plugin-catppuccin.flake = false;

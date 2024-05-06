@@ -1,7 +1,7 @@
 [
   "tokyonight"
   "onedark"
-  "onenord"
+  "nord"
   "catppuccin"
   "dracula-nvim"
   "gruvbox"

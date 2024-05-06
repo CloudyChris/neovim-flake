@@ -45,7 +45,6 @@ in {
             "molokai"
             "nightfly"
             "nord"
-            "onenord"
             "oceanicnext"
             "onelight"
             "palenight"
@@ -58,7 +57,7 @@ in {
             "wombat"
           ]
           ++ optional themeSupported config.vim.theme.name);
-        default = "onedark";
+        default = "nord";
         # TODO: xml generation error if the closing '' is on a new line.
         # issue: https://gitlab.com/rycee/nmd/-/issues/10
         defaultText = ''`config.vim.theme.name` if theme supports lualine else "auto"'';
