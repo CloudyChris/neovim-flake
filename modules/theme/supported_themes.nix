@@ -53,6 +53,8 @@ in {
         }
         vim.cmd[[colorscheme nord]]
       '';
+      styles = [];
+      defaultStyle = "";
     };
 
     tokyonight = {
