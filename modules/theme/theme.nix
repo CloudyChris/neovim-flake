@@ -21,7 +21,7 @@ in {
     style = mkOption {
       description = "Specific style for theme if it supports it";
       type = types.enum cfg.supportedThemes.${cfg.name}.styles;
-      default = cfg.supportedThemes.${cfg.name}.defaultStyle;
+      default = cfg.supportedThemes.${cfg.name}.defaultStyle or "";
     };
 
     extraConfig = mkOption {
