@@ -76,7 +76,7 @@ in {
                 show_close_icon = true,
                 show_tab_indicators = true,
                 persist_buffer_sort = true,
-                enforce_regular_tabs = true,
+                enforce_regular_tabs = false,
                 always_show_bufferline = true,
                 offsets = {{filetype = "NvimTree", text = "File Explorer", text_align = "left"}},
                 sort_by = 'extension',
