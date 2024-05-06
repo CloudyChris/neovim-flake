@@ -58,7 +58,7 @@ in {
             "wombat"
           ]
           ++ optional themeSupported config.vim.theme.name);
-        default = "auto";
+        default = "onenord";
         # TODO: xml generation error if the closing '' is on a new line.
         # issue: https://gitlab.com/rycee/nmd/-/issues/10
         defaultText = ''`config.vim.theme.name` if theme supports lualine else "auto"'';
