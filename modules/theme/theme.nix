@@ -1,21 +1,21 @@
-{ pkgs
-, config
-, lib
-, ...
+{
+  pkgs,
+  config,
+  lib,
+  ...
 }:
 with lib;
 with lib.attrsets;
 with builtins; let
   cfg = config.vim.theme;
-in
-{
+in {
   options.vim.theme = {
     enable = mkEnableOption "themes";
 
     name = mkOption {
       description = "Supported themes can be found in `supportedThemes.nix`";
       type = types.enum (attrNames cfg.supportedThemes);
-      default = "onenord";
+      default = "onedark";
     };
 
     style = mkOption {
@@ -32,8 +32,8 @@ in
   };
 
   config = mkIf cfg.enable {
-    vim.startPlugins = [ cfg.name ];
-    vim.luaConfigRC.themeSetup = nvim.dag.entryBefore [ "theme" ] cfg.extraConfig;
+    vim.startPlugins = [cfg.name];
+    vim.luaConfigRC.themeSetup = nvim.dag.entryBefore ["theme"] cfg.extraConfig;
     vim.luaConfigRC.theme = cfg.supportedThemes.${cfg.name}.setup;
   };
 }
