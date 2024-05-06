@@ -48,9 +48,6 @@ in {
     nord = {
       setup = ''
         -- Nord theme
-        require('nord').setup {
-          style = "${cfg.style}"
-        }
         vim.cmd[[colorscheme nord]]
       '';
     };
