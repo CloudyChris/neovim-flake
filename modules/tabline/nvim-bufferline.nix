@@ -60,8 +60,8 @@ in {
                 close_command = ${mouse.close},
                 right_mouse_command = ${mouse.right},
                 indicator = {
-                  icon = ' 󰆋 '
-                  style = 'icon'
+                  icon = ' 󰆋 ',
+                  style = 'icon',
                 },
                 buffer_close_icon = '󰅖',
                 modified_icon = '●',
