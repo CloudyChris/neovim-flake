@@ -34,7 +34,7 @@ in
     };
 
     hideFiles = mkOption {
-      default = [ ".git" "node_modules" ".cache" ];
+      default = [ ];
       description = "Files to hide in the file view by default.";
       type = with types; listOf str;
     };
